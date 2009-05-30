@@ -52,7 +52,9 @@ h3{color:#a2c61a; font-style:italic; font-family:Arial, Helvetica, sans-serif;}
 #pa_mainNav ul a:visited{font-size:14px; color:#fff; text-decoration:none;}
 #pa_mainNav ul a:hover,
 #pa_mainNav ul a:active,
-#pa_mainNav ul a.selected{font-size:14px; color:#abd11b; text-decoration:none;}
+/* jpm changed for WordPress */
+/* #pa_mainNav ul a.selected{font-size:14px; color:#abd11b; text-decoration:none;} */
+#pa_mainNav ul li.current_page_item a {font-size:14px; color:#abd11b; text-decoration:none;}
 
 /* =sub navigation */
 #pa_subNav ul a:link,

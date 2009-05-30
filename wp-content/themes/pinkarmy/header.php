@@ -44,15 +44,8 @@ $(function () { iomer.equalizePanels (); });
     <div id="pa_mainNav" class="full">
       <div id="pa_mainNavWrap" class="fixed">
           <ul>
-              <li><a href="index.html" class="selected">Home</a></li>
-                <li><a href="about/story.html">About</a></li>
-                <li><a href="strategy/overview.html">Strategy</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="join.html">Join</a></li>
-                <li><a href="mediacentre.html">Media Centre</a></li>
-                <li><a href="faq.html">FAQs</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <?php wp_list_pages(array('title_li' => '', 'depth' => 1)); ?>
+          </ul>
         </div><!--close wrap-->
     </div><!--close mainNav-->
 

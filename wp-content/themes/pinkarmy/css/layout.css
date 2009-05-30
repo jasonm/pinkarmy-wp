@@ -82,7 +82,10 @@ html[xmlns] .clearfix { display: block; }
 #pa_mainNav ul{list-style:none;}
 #pa_mainNav ul li{display:block; float:left; line-height:40px; background:url(../images/mainNav_separator.gif) right no-repeat;}
 #pa_mainNav ul li a{display:block; padding:0px 20px;}
-#pa_mainNav ul li a.selected{background:url(../images/mainNav_arrow.gif) center no-repeat;}
+
+/* jpm changed for WordPress */
+/* #pa_mainNav ul li a.selected{background:url(../images/mainNav_arrow.gif) center no-repeat;} */
+#pa_mainNav ul li.current_page_item a {background:url(../images/mainNav_arrow.gif) center no-repeat;}
 
 
 /*------------------------------------------------------
