@@ -1,18 +1,26 @@
 <?php
 /**
  * @package WordPress
- * @subpackage Classic_Theme
+ * @subpackage Default_Theme
  */
 ?>
-<!-- begin footer -->
+
+<hr />
+<div id="footer">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
+	<p>
+		<?php bloginfo('name'); ?> is proudly powered by
+		<a href="http://wordpress.org/">WordPress</a>
+		<br /><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a>
+		and <a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a>.
+		<!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
+	</p>
+</div>
 </div>
 
-<?php get_sidebar(); ?>
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+<?php /* "Just what do you think you're doing Dave?" */ ?>
 
-<p class="credit"><!--<?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. --> <cite><?php echo sprintf(__("Powered by <a href='http://wordpress.org/' title='%s'><strong>WordPress</strong></a>"), __("Powered by WordPress, state-of-the-art semantic personal publishing platform.")); ?></cite></p>
-
-</div>
-
-<?php wp_footer(); ?>
+		<?php wp_footer(); ?>
 </body>
 </html>
