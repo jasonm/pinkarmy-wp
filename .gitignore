@@ -1,0 +1,15 @@
+log/*
+tmp/*
+db/schema.rb
+db/*.sqlite3
+public/system
+*.DS_Store
+*.swp
+coverage/*
+public/javascripts/all.js
+public/stylesheets/cached-*
+public/images/deals
+tags
+*.pdf
+
+!.keep
