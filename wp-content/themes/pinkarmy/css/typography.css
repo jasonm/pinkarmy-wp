@@ -1,0 +1,75 @@
+@charset "utf-8";
+/* 
+	typography.css
+	
+	Project: Pink Army
+	
+	iomer internet solutions - Mar 2009
+	iomer.com
+
+
+
+	Table of Contents
+	-----------------
+	
+	=global links
+	=headings reset
+	=headings styles
+	=main navigation
+	=sub navigation
+	=promo boxes
+	=footer
+*/
+
+
+body {font:82.5% Arial, Verdana, sans-serif; color:#888;}
+
+/* =global links */
+a:link,
+a:visited{color:#3b92b8; text-decoration:none;}
+a:hover,
+a:active{color:#3b92b8; text-decoration:underline;} 
+
+:focus {outline:none;}
+
+/* =headings reset */
+h1 {font-size:30px; margin-bottom:9px;}
+h2 {font-size:150%; margin-bottom:8px;}
+h3 {font-size:105%; margin-bottom:0px;}
+h4 {font-size:130%; margin-bottom:6px;}
+h5 {font-size:120%; margin-bottom:5px;}
+h6 {font-size:110%; margin-bottom:4px;}
+
+h1,h2,h3,h4,h5,h6 {padding:0; letter-spacing:0.04em; font-family:"Myriad Pro" Arial, Helvetica, sans-serif; font-weight:normal;}
+
+/* =headings styles */
+h1{color:#145061;}
+h2{color:#207087;}
+h3{color:#a2c61a; font-style:italic; font-family:Arial, Helvetica, sans-serif;}
+
+/* =main navigation */
+#pa_mainNav ul a:link,
+#pa_mainNav ul a:visited{font-size:14px; color:#fff; text-decoration:none;}
+#pa_mainNav ul a:hover,
+#pa_mainNav ul a:active,
+#pa_mainNav ul a.selected{font-size:14px; color:#abd11b; text-decoration:none;}
+
+/* =sub navigation */
+#pa_subNav ul a:link,
+#pa_subNav ul a:visited{font-size:12px; color:#999; text-decoration:none;}
+#pa_subNav ul a:hover,
+#pa_subNav ul a:active,
+#pa_subNav ul a.selected{font-size:12px; color:#555; text-decoration:none;}
+
+/* =promo boxes */
+.promoBox a.heading{font-size:20px; font-family:"Myriad Pro" Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;}
+.sbHeading{font-size:16px; color:#fff; font-family:"Myriad Pro" Arial, Helvetica, sans-serif;}
+* html .sbHeading{font-family:Arial, Helvetica, sans-serif; font-weight:bold;}
+
+/* =special styles */
+.subText{font-size:10px; color:#999;}
+
+/* =footer */
+#pa_footer{color:#207087; font-size:80%;}
+
+

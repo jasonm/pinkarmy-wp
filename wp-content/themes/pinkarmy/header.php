@@ -1,47 +1,64 @@
-<?php
-/**
- * @package WordPress
- * @subpackage Default_Theme
- */
-?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" <?php language_attributes(); ?>>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- title>Pink Army Cooperative: Join the Revolution!</title -->
+  <title>
+    <?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?>: <?php bloginfo('description'); ?>
+  </title>
 
-<head profile="http://gmpg.org/xfn/11">
-<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/layout.css" media="screen, projection" />
+  <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/typography.css" media="screen, projection" />
 
-<title><?php wp_title('&laquo;', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+  <link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
+  <link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
+  <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 
-<link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
-<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
-<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
-<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
+<script src="wp-content/themes/pinkarmy/js/jquery-1.2.6.js" type="text/javascript"></script>
+<script src="wp-content/themes/pinkarmy/js/iomer.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(function () { iomer.equalizePanels (); });
+</script>
 
-<style type="text/css" media="screen">
+  <?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
+  <?php wp_head(); ?>
 
-<?php
-// Checks to see whether it needs a sidebar or not
-if ( !empty($withcomments) && !is_single() ) {
-?>
-	#page { background: url("<?php bloginfo('stylesheet_directory'); ?>/images/kubrickbg-<?php bloginfo('text_direction'); ?>.jpg") repeat-y top; border: none; }
-<?php } else { // No sidebar ?>
-	#page { background: url("<?php bloginfo('stylesheet_directory'); ?>/images/kubrickbgwide.jpg") repeat-y top; border: none; }
-<?php } ?>
-
-</style>
-
-<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
-
-<?php wp_head(); ?>
 </head>
+
+<!-- TODO: body class sub if not homepage -->
 <body>
-<div id="page">
+
+  <!--open wrapper-->
+  <div id="pa_wrapper">
+
+    <!--open logoBlock-->
+    <div id="pa_logoBlock" class="full">
+      <div id="pa_logoBlockWrap" class="fixed">
+          <a href="index.html" class="f_left"><img src="<?php bloginfo('template_directory'); ?>/images/pa_logo.jpg" alt="Pink Army" /></a>
+            <span class="tagline f_right">Join the Revolution!</span>
+        </div><!--close wrap-->
+    </div><!--close logoBlock-->
 
 
-<div id="header">
-	<div id="headerimg">
-		<h1><a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a></h1>
-		<div class="description"><?php bloginfo('description'); ?></div>
-	</div>
-</div>
-<hr />
+    <!--open mainNav-->
+    <div id="pa_mainNav" class="full">
+      <div id="pa_mainNavWrap" class="fixed">
+          <ul>
+              <li><a href="index.html" class="selected">Home</a></li>
+                <li><a href="about/story.html">About</a></li>
+                <li><a href="strategy/overview.html">Strategy</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="mediacentre.html">Media Centre</a></li>
+                <li><a href="faq.html">FAQs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div><!--close wrap-->
+    </div><!--close mainNav-->
+
+
+    <!--open mastHead-->
+    <div id="pa_mastHead" class="full">
+      <div id="pa_mastHeadWrap" class="fixed"></div><!--close wrap-->
+    </div><!--close mastHead-->
+

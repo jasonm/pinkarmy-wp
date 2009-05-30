@@ -5,22 +5,19 @@
  */
 ?>
 
-<hr />
-<div id="footer">
-<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way; it's our only promotion or advertising. -->
-	<p>
-		<?php bloginfo('name'); ?> is proudly powered by
-		<a href="http://wordpress.org/">WordPress</a>
-		<br /><a href="<?php bloginfo('rss2_url'); ?>">Entries (RSS)</a>
-		and <a href="<?php bloginfo('comments_rss2_url'); ?>">Comments (RSS)</a>.
-		<!-- <?php echo get_num_queries(); ?> queries. <?php timer_stop(1); ?> seconds. -->
-	</p>
-</div>
-</div>
+    <div class="push"></div><!--close push-->
+  </div><!--close wrapper-->
 
-<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
-<?php /* "Just what do you think you're doing Dave?" */ ?>
 
-		<?php wp_footer(); ?>
+  <!--open footer-->
+  <div id="pa_footer" class="full">
+    <div id="pa_footerWrap" class="fixed">
+      <span class="f_left">Copyright &copy; 2009 Pink Army. All Rights Reserved.</span>
+      <span class="f_right">Questions? Comments? Feel free to <a href="contact.html">Contact Us</a>!</span>
+    </div><!--close wrap-->
+  </div><!--close footer-->
+
+  <!--TODO what is this for? -->
+  <?php wp_footer(); ?>
 </body>
 </html>
