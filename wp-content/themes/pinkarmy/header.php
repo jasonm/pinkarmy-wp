@@ -25,8 +25,7 @@ $(function () { iomer.equalizePanels (); });
 
 </head>
 
-<!-- TODO: body class sub if not homepage -->
-<body>
+<body <?php if ( !is_front_page() ) echo 'class="sub"'; ?>>
 
   <!--open wrapper-->
   <div id="pa_wrapper">
@@ -34,7 +33,7 @@ $(function () { iomer.equalizePanels (); });
     <!--open logoBlock-->
     <div id="pa_logoBlock" class="full">
       <div id="pa_logoBlockWrap" class="fixed">
-          <a href="index.html" class="f_left"><img src="<?php bloginfo('template_directory'); ?>/images/pa_logo.jpg" alt="Pink Army" /></a>
+        <a href="<?php echo(get_bloginfo('url')) ?>" class="f_left"><img src="<?php bloginfo('template_directory'); ?>/images/pa_logo.jpg" alt="Pink Army" /></a>
             <span class="tagline f_right">Join the Revolution!</span>
         </div><!--close wrap-->
     </div><!--close logoBlock-->
