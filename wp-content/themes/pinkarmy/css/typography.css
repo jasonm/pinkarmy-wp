@@ -54,14 +54,17 @@ h3{color:#a2c61a; font-style:italic; font-family:Arial, Helvetica, sans-serif;}
 #pa_mainNav ul a:active,
 /* jpm changed for WordPress */
 /* #pa_mainNav ul a.selected{font-size:14px; color:#abd11b; text-decoration:none;} */
-#pa_mainNav ul li.current_page_item a {font-size:14px; color:#abd11b; text-decoration:none;}
+#pa_mainNav ul li.current_page_item   a {font-size:14px; color:#abd11b; text-decoration:none;}
+#pa_mainNav ul li.current_page_parent a {font-size:14px; color:#abd11b; text-decoration:none;}
 
 /* =sub navigation */
 #pa_subNav ul a:link,
 #pa_subNav ul a:visited{font-size:12px; color:#999; text-decoration:none;}
 #pa_subNav ul a:hover,
 #pa_subNav ul a:active,
-#pa_subNav ul a.selected{font-size:12px; color:#555; text-decoration:none;}
+/* jpm changed for WordPress */
+/* #pa_subNav ul a.selected{font-size:12px; color:#555; text-decoration:none;} */
+#pa_subNav ul li.current_page_item a {font-size:12px; color:#555; text-decoration:none;}
 
 /* =promo boxes */
 .promoBox a.heading{font-size:20px; font-family:"Myriad Pro" Arial, Helvetica, sans-serif; color:#fff; text-decoration:none;}

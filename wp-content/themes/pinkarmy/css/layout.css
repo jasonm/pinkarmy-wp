@@ -85,7 +85,8 @@ html[xmlns] .clearfix { display: block; }
 
 /* jpm changed for WordPress */
 /* #pa_mainNav ul li a.selected{background:url(../images/mainNav_arrow.gif) center no-repeat;} */
-#pa_mainNav ul li.current_page_item a {background:url(../images/mainNav_arrow.gif) center no-repeat;}
+#pa_mainNav ul li.current_page_item   a {background:url(../images/mainNav_arrow.gif) center no-repeat;}
+#pa_mainNav ul li.current_page_parent a {background:url(../images/mainNav_arrow.gif) center no-repeat;}
 
 
 /*------------------------------------------------------
@@ -97,7 +98,9 @@ html[xmlns] .clearfix { display: block; }
 #pa_subNav ul{list-style:none;}
 #pa_subNav ul li{display:block; float:left; line-height:35px;}
 #pa_subNav ul li a{display:block; padding:0px 15px;}
-#pa_subNav ul li a.selected{background:url(../images/subNav_arrow.gif) center no-repeat;}
+/* jpm changed for WordPress */
+/* #pa_subNav ul li a.selected{background:url(../images/subNav_arrow.gif) center no-repeat;} */
+#pa_subNav ul li.current_page_item a {background:url(../images/subNav_arrow.gif) center no-repeat;}
 
 
 /*------------------------------------------------------

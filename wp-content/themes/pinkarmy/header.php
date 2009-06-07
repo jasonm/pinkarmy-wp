@@ -48,6 +48,25 @@ $(function () { iomer.equalizePanels (); });
         </div><!--close wrap-->
     </div><!--close mainNav-->
 
+    <!--open subNav-->
+    <?php
+      if($post->post_parent) {
+        $children = wp_list_pages("title_li=&child_of=".$post->post_parent."&echo=0");
+      } else {
+        $children = wp_list_pages("title_li=&child_of=".$post->ID."&echo=0");
+      }
+    ?>
+
+    <?php if ($children) { ?>
+      <div id="pa_subNav" class="full">
+        <div id="pa_subNavWrap" class="fixed">
+          <ul>
+            <?php echo $children; ?>
+          </ul>
+        </div><!--close wrap-->
+      </div><!--close subNav-->
+    <?php } ?>
+
 
     <!--open mastHead-->
     <div id="pa_mastHead" class="full">
