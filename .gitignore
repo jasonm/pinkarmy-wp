@@ -11,5 +11,6 @@ public/stylesheets/cached-*
 public/images/deals
 tags
 *.pdf
+wp-config.php
 
 !.keep
