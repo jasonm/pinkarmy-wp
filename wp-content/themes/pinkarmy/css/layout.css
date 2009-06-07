@@ -107,9 +107,9 @@ html[xmlns] .clearfix { display: block; }
   =masthead
   ------------------------------------------------------*/
 #pa_mastHead{background:#fbdde9; height:auto;}
-#pa_mastHeadWrap{background:url(../images/mastHead_home.jpg) 0 0 no-repeat; height:232px;}
+#pa_mastHeadWrap{background:url(../images/masthead_home.jpg) 0 0 no-repeat; height:232px;}
 
-.sub #pa_mastHeadWrap{background:url(../images/mastHead_sub.jpg) 0 0 no-repeat; height:110px;}
+.sub #pa_mastHeadWrap{background:url(../images/masthead_sub.jpg) 0 0 no-repeat; height:110px;}
 
 
 /*------------------------------------------------------
