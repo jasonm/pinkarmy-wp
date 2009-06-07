@@ -1,6 +1,6 @@
 -- MySQL dump 10.11
 --
--- Host: localhost    Database: diybiowp
+-- Host: localhost    Database: pinkarmywp
 -- ------------------------------------------------------
 -- Server version	5.0.51a
 
