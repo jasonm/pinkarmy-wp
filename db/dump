@@ -1,0 +1,3 @@
+#!/bin/sh
+PROGDIR=`dirname $0`
+mysqldump5 -uroot pinkarmywp > $PROGDIR/pinkarmywp.sql
