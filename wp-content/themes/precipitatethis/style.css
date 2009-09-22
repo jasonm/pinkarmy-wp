@@ -1,0 +1,271 @@
+/*
+Theme Name: Precipitate This
+Theme URI: http://precipitatethis.com
+Description: Precipitate This theme
+Version: 1.0
+Author: Melissa Ellerman, Lindsay Cade, Jason Morrison
+Author URI:
+Tags:
+*/
+
+body {
+	background-color: #E3EBF0;	
+	font-size: 12px;
+	font-family: "Baskerville";
+}
+
+.header {
+	background:url(images2/top.gif) no-repeat top center #E3EBF0; 
+	height: 317px;
+	width: 1200px;
+}
+
+h2.pagetitle {
+  margin: 0px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: normal;
+  color: #778064;
+}
+
+/* search form */
+
+#search {
+	position:absolute;
+	text-align:right;
+	width:250px;
+	left:741px;
+	top:16px;
+	z-index:100;
+}
+#search form {
+	padding:0;
+	margin:0;
+}
+#search .txtField {
+	border:1px solid #778064;
+	width:138px;
+	margin:0;
+	padding:3px;
+	font-family: baskerville, serif;
+	font-size:12px;
+	background: white;
+}
+#search .btnSearch {
+	border:1px solid #778064;
+	color:#fff;
+	margin:0;
+	padding:2px;
+	font-family: baskerville, serif;
+	font-size:11px;
+	background: #778064;
+}
+
+a#home-link {
+	position: absolute;
+	top: 91px;
+	left: 666px;
+	width:73px;
+	height:38px;
+}
+a#about-link {
+	position: absolute;
+	top: 110px;
+	left: 745px;
+	width:70px;
+	height:38px;
+}
+a#archives-link {
+	position: absolute;
+	top: 127px;
+	left: 821px;
+	width:93px;
+	height:39px;
+}
+
+a#home-link span,
+a#about-link span,
+a#archives-link span {
+    margin-left: -9999px;
+}
+
+.middle {
+	background:transparent url(images2/middle.gif) repeat-y scroll center; 
+	width: 1200px;
+	
+}
+
+.side{
+	position: absolute;
+	left:750px;
+	width: 205px;
+	padding-left: 15px;
+}
+
+p.side-p{
+	margin-top: 5px;
+	color: #999999;
+}
+
+p.recent{
+	margin-top:0px;
+	margin-bottom: 0px;
+	color: #999999;
+}
+
+p.post-title {
+	margin-top: 0px;
+}
+
+
+.content{
+	padding-left: 263px;
+	padding-right: 50px;
+	width: 430px;
+	border-right: 2px solid #9EA883;
+
+}
+
+.post {
+	padding-bottom: 30px;
+	background:url(images2/tab.gif) no-repeat top left;
+	padding-left: 18px;
+	position: relative;
+	left: -15px;
+}
+
+.side-title {
+	font-size: 18px;
+	color: #778064;
+}
+
+#side-separator{
+	height: 15px;
+}
+
+.post-title {
+	margin-bottom: 20px;
+	font-size: 18px;
+	color: #778064;
+}
+
+.tab{
+
+}
+
+.date {
+	font-size:14px;
+}
+
+.post-footer {
+	text-align: right;
+}
+
+.footer {
+	background:url(images2/bottom.gif) no-repeat top center #E3EBF0; 
+	height: 348px;
+	width: 1200px;
+	
+}
+
+/* comment styles */
+
+.comments-header, .name, .email, .website, .txt-email-sub, .txt-website-example {
+	display:block;
+	/*text-indent:-800px;*/
+	font-size:12px;
+	overflow:hidden;
+	margin:0;
+	padding-bottom:7px;
+	margin-right: 20px;
+	margin-top:30px;
+	margin-bottom: 20px;
+	border-bottom: 1px solid #9EA883;
+	border-top: 1px solid #9EA883;
+
+}
+
+.comment-header {
+	padding-top: 7px;
+}
+
+.name, .email, .website {
+	width:80px;
+	float:left;
+	margin-right:52px;
+	clear:left;
+}
+
+.single-comment {
+	padding-bottom: 15px;
+}
+
+h4 {
+	margin: 0px;
+}
+
+
+/*.name {
+	height:30px;
+	background:url(images/txt-name.gif) no-repeat top right;
+}
+.email {
+	height:30px;
+	background:url(images/txt-email.gif) no-repeat top right;
+}
+.website {
+	height:30px;
+	background:url(images/txt-website.gif) no-repeat top right;
+}
+
+
+.txt-email-sub {
+	height:20px;
+	background:url(images/txt-email-sub.gif) no-repeat 90px 0;
+	clear:both;
+}
+.txt-website-example {
+	height:20px;
+	background:url(images/txt-site-example.gif) no-repeat 90px 0;
+	clear:both;
+}
+*/
+
+#commentform {
+	padding-bottom:30px;
+	margin:0;
+}
+#commentform .comment-field {
+	border:1px solid #939393;
+	width:320px;
+	height: 10px;
+	margin:7px;
+	padding:3px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#fff;
+	/*float:left;*/
+}
+#commentform .comment-box {
+	border:1px solid #939393;
+	width:425px;
+	margin:0 0 10px;
+	padding:3px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size:12px;
+	background:#fff;
+}
+#commentform .btnComment {
+	float:left;
+	clear:left;
+	border:1px solid #939393;
+	color:#fff;
+	margin:0;
+	padding:3px;
+	font-family: baskerville, serif;
+	font-size:11px;
+	background: #fff;
+	color:#939393
+}
+
+
