@@ -10,9 +10,21 @@ Tags:
 
 body {
 	background-color: #E3EBF0;	
-	font-size: 12px;
+	font-size: 16px;
 	font-family: "Baskerville";
 }
+
+a,
+a.link,
+a.visited {
+	color: #999999;
+	text-decoration: none;
+}
+a:hover,
+a:active {
+	color: #000000;
+        text-decoration: underline;
+	}
 
 .header {
 	background:url(images2/top.gif) no-repeat top center #E3EBF0; 
@@ -149,6 +161,11 @@ p.post-title {
 	color: #778064;
 }
 
+.post-title a {
+	color: #778064;
+  text-decoration: none;
+}
+
 .tab{
 
 }
@@ -169,6 +186,19 @@ p.post-title {
 }
 
 /* comment styles */
+
+h3#comments,
+div#respond h3 {
+  font-size: 18px;
+	color: #778064;
+ font-weight: normal;
+}
+
+textarea#comment {
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size:12px;
+  width: 100%;
+}
 
 .comments-header, .name, .email, .website, .txt-email-sub, .txt-website-example {
 	display:block;
@@ -255,7 +285,7 @@ h4 {
 	font-size:12px;
 	background:#fff;
 }
-#commentform .btnComment {
+#commentform input#submit {
 	float:left;
 	clear:left;
 	border:1px solid #939393;

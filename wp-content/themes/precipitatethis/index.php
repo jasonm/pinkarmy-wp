@@ -10,7 +10,9 @@
 
             <div class="post" id="post-<?php the_ID(); ?>">
               <div class="post-title">
-                <?php the_title(); ?>
+                <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">
+                  <?php the_title(); ?>
+                </a>
                 <div class="date">
                   <?php the_time('F jS, Y') ?>
                 </div>
